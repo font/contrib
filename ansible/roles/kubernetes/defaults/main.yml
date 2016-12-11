@@ -3,7 +3,7 @@ kube_version: 1.4.5
 
 # Set source of kubernetes binaries
 # Available: packageManager, localBuild, github-release, distribution-rpm
-kube_source_type: packageManager
+kube_source_type: distribution-rpm
 
 # The port that the Kubernetes apiserver component listens on.
 kube_master_api_port: 443
@@ -25,8 +25,8 @@ kube_config_dir: /etc/kubernetes
 kube_download_url_base: https://storage.googleapis.com/kubernetes-release/release/v{{ kube_version }}/bin/linux/amd64
 
 # The URL do download distribution rpms shipping kubernetes binaries from
-kube_rpm_url_base: https://kojipkgs.fedoraproject.org//packages/kubernetes/1.2.0/0.27.git4a3f9c5.fc25/x86_64
-kube_rpm_url_sufix: 1.2.0-0.27.git4a3f9c5.fc25.x86_64.rpm
+kube_rpm_url_base: https://kojipkgs.fedoraproject.org/packages/kubernetes/1.4.5/3.fc25/x86_64/
+kube_rpm_url_sufix: 1.4.5-3.fc25.x86_64.rpm
 
 # Directory to store downloaded Kubernetes releases
 kube_releases_directory: /opt/kubernetes
